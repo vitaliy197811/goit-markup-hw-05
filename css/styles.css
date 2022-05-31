@@ -78,12 +78,15 @@ img {
 }
 
 /*навигация + контакты*/
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .page-header {    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ECECEC;
+    align-items: center;    
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -122,8 +125,8 @@ nav {
     color: var(--accent-text-color);   
 }
 
-.studio::after,
-.portfolio::after {
+.studio-page::after,
+.portfolio-page::after {
     display: block;
     content: "";
     position: absolute;
@@ -544,7 +547,7 @@ nav {
     margin-bottom: 0;
 }
 
-.addr, .phone-mail {
+.footer-contact {
     color: #FFFFFF;
 
     font-family: Roboto, sans-serif;
@@ -552,18 +555,15 @@ nav {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-mail {
-    color: rgba(255, 255, 255, 0.6);
-    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(255, 255, 255, 0.6);   
 }
 
-.phone-mail:hover,
-.phone-mail:focus,
-.addr:hover,
-.addr:focus {
+.footer-contact:hover,
+.footer-contact:focus {
     color: var(--accent-text-color);
 }
 
@@ -706,10 +706,6 @@ nav {
                     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-port:active {
-    color: var(--accent-text-color);
-}
-
 .filter-button > filter {
 margin: 0;
 padding: 0;
@@ -760,7 +756,7 @@ padding: 0;
     padding: 20px 24px;
 }
 
-.work-box h3 {
+.work-text h3 {
     color: var(--primary-text-color);
 
     font-family: Roboto, sans-serif;
@@ -771,7 +767,7 @@ padding: 0;
     margin: 0 0 4px 0;
 }
 
-.work p {
+.work-text p {
     color: var(--main-text-color);
 
     font-family: Roboto, sans-serif;
@@ -803,7 +799,7 @@ padding: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover .work-card {
+.work-link:hover .work-card {
     opacity: 1;
     transform: translateY(0%);
 }
