@@ -382,7 +382,6 @@ nav {
 
 .team-box {
     background-color: #FFFFFF;
-
     width: 270px;        
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -507,7 +506,6 @@ nav {
 /*подвал*/
 .footer {
     background-color: #2F303A;
-    
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -795,7 +793,8 @@ nav {
     box-shadow: none;
 }
 
-.work-link:hover .work-card {
+.work-link:hover .work-card, 
+.work-link:focus .work-card {
     opacity: 1;
     transform: translateY(0%);
 }
@@ -804,8 +803,8 @@ nav {
     display: block;
 }
 
-.work-link:hover {
-    display: block;
+.work-link:hover, 
+.work-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
